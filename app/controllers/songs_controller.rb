@@ -1,4 +1,7 @@
 class SongsController < ApplicationController
+
+  before_action :verify_new_song_access, only: :new
+
   def index
     if params[:artist_id]
       @artist = Artist.find_by(id: params[:artist_id])
