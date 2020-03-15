@@ -1,4 +1,7 @@
 class ArtistsController < ApplicationController
+
+  before_action :verify_new_artist_access, only: :new
+
   def index
     @artists = Artist.all
   end
