@@ -6,7 +6,7 @@
 2. Use namespaced routes.
 
 ## Overview
-
+v
 We're going to add some administrative functions to our song library.
 Using what we learned about namespaced routes and module scope, we'll
 organize our controllers and routes under an `admin` namespace to keep
